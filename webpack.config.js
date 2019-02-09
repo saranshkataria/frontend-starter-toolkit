@@ -1,5 +1,8 @@
-module.exports = env => {
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = ({ mode }) => {
   return {
-    mode: env.mode
+    mode: mode,
+    plugins: [new HtmlWebpackPlugin()]
   };
 };
