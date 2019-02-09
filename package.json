@@ -6,12 +6,17 @@
   "author": "saranshkataria <saransh@wisdomgeek.com>",
   "license": "MIT",
   "scripts": {
-    "webpack": "webpack"
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode production"
   },
   "dependencies": {
     "webpack": "^4.29.3"
   },
   "devDependencies": {
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   }
 }
