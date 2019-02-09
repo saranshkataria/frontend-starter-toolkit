@@ -1,0 +1,8 @@
+{
+  "name": "frontend-starter-kit",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/saranshkataria/frontend-starter-kit.git",
+  "author": "saranshkataria <saransh@wisdomgeek.com>",
+  "license": "MIT"
+}
