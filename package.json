@@ -6,11 +6,11 @@
   "author": "saranshkataria <saransh@wisdomgeek.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --env.mode development --watch",
+    "dev": "webpack-dev-server --env.mode development --watch",
     "prod": "webpack --env.mode production",
     "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
     "prod:debug": "npm run debug -- --env.mode production",
-    "dev:debug": "npm run debug -- --env.mode production"
+    "dev:debug": "npm run debug -- --env.mode development"
   },
   "dependencies": {
     "webpack": "^4.29.3"
