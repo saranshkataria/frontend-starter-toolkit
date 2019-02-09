@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = ({ mode }) => {
   return {
@@ -6,7 +7,8 @@ module.exports = ({ mode }) => {
     plugins: [
       new HtmlWebpackPlugin({
         hash: true
-      })
+      }),
+      new webpack.ProgressPlugin()
     ]
   };
 };
