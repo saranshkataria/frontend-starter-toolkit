@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "webpack-dev-server --env.mode development --watch",
     "prod": "webpack --env.mode production",
-    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
+    "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod:debug": "npm run debug -- --env.mode production",
     "dev:debug": "npm run debug -- --env.mode development"
   },
@@ -17,6 +17,7 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
+    "babel-loader": "^8.0.5",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "webpack": "^4.29.3",

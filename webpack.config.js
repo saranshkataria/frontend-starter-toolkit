@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
-const modeConfig = mode => require(`./build-utils/webpack.${mode}`)(mode);
+const modeConfig = mode => require(`./build-utils/webpack.${mode}.js`)(mode);
 
 module.exports = ({ mode } = { mode: 'production' }) => {
   return webpackMerge(
@@ -9,23 +9,19 @@ module.exports = ({ mode } = { mode: 'production' }) => {
       mode,
       plugins: [
         new HtmlWebpackPlugin({
-          hash: true
+          hash: true,
         }),
-        new webpack.ProgressPlugin()
+        new webpack.ProgressPlugin(),
       ],
       module: {
         rules: [
           {
-            test: /\.(|ts|tsx)$/,
-            loader: 'babel-loader'
+            test: /\.(ts|tsx)$/,
+            loader: 'babel-loader',
           },
-          {
-            test: /\.js$/,
-            use: ["source-map-loader"],
-            enforce: "pre"
-          }
-        ]
-      }
+        ],
+      },
+      resolve: { extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'] },
     },
     modeConfig(mode)
   );
