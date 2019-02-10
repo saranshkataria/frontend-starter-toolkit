@@ -10,6 +10,7 @@ module.exports = ({ mode } = { mode: 'production' }) => {
       plugins: [
         new HtmlWebpackPlugin({
           hash: true,
+          template: './src/index.html',
         }),
         new webpack.ProgressPlugin(),
       ],
