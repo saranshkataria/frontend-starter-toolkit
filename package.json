@@ -13,10 +13,13 @@
     "dev:debug": "npm run debug -- --env.mode development"
   },
   "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "webpack": "^4.29.3"
   },
   "devDependencies": {
     "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.4",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
