@@ -12,7 +12,20 @@ module.exports = ({ mode } = { mode: 'production' }) => {
           hash: true
         }),
         new webpack.ProgressPlugin()
-      ]
+      ],
+      module: {
+        rules: [
+          {
+            test: /\.(|ts|tsx)$/,
+            loader: 'babel-loader'
+          },
+          {
+            test: /\.js$/,
+            use: ["source-map-loader"],
+            enforce: "pre"
+          }
+        ]
+      }
     },
     modeConfig(mode)
   );
