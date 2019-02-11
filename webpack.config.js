@@ -1,12 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
-const modeConfig = mode => require(`./build-utils/webpack.${mode}.js`)(mode);
+const modeConfig = env => require(`./build-utils/webpack.${env.mode}.js`)(env);
 
-module.exports = ({ mode } = { mode: 'production' }) => {
+module.exports = (env = { mode: 'production' }) => {
   return webpackMerge(
     {
-      mode,
+      mode: env.mode,
       plugins: [
         new HtmlWebpackPlugin({
           hash: true,
@@ -24,6 +24,6 @@ module.exports = ({ mode } = { mode: 'production' }) => {
       },
       resolve: { extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'] },
     },
-    modeConfig(mode)
+    modeConfig(env)
   );
 };
