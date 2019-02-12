@@ -1,3 +1,4 @@
 import React from 'react';
-
-export default () => <div>Hello World</div>;
+const AppComponent = () => <div>Hello World</div>;
+AppComponent.displayName = 'App';
+export default AppComponent;
