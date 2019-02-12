@@ -18,7 +18,14 @@ module.exports = (env = { mode: 'production' }) => {
         rules: [
           {
             test: /\.(ts|tsx)$/,
+            exclude: /node_modules/,
             loader: 'babel-loader',
+          },
+          {
+            test: /\.(ts|tsx)$/,
+            exclude: /node_modules/,
+            enforce: 'pre',
+            loader: 'eslint-loader',
           },
         ],
       },
