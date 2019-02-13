@@ -11,6 +11,7 @@ module.exports = {
   plugins: ['react'],
   env: {
     browser: true,
+    jest: true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   settings: {
