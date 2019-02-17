@@ -12,7 +12,8 @@
     "prod:debug": "npm run debug -- --env.mode production",
     "dev:debug": "npm run debug -- --env.mode development",
     "lint": "eslint . --ext .ts,.tsx",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "test -- --coverage"
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
