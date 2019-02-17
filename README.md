@@ -16,10 +16,10 @@ git clone --depth=1 https://github.com/saranshkataria/frontend-starter-kit.git <
 
 You can then start building your own project based on the project that gets cloned. You can also remove the remote to the repo to avoid accidentally pushing to it.
 
-Once you have a copy of the project, you need to install the dependencies. Run the command `npm install` or `yarn add` in the command line.
+Once you have a copy of the project, you need to install the dependencies. Run the command `npm install` or `yarn` in the command line.
 After that you can run one of the following commands in the command line:
 
-- `npm dev` or `yarn dev` to run a development server
+- `npm dev` or `yarn dev` to run a development server using webpack dev server. Each time you hit save, changes get hot reloaded using hot module replacement
 - `npm prod` or `yarn prod` to create a production build
 - `npm prod:debug` or `yarn prod:debug` to run webpack in debug mode while using the production configuration
 - `npm dev:debug` or `yarn dev:debug` to run webpack in debug mode while using the development configuration
