@@ -11,12 +11,13 @@ If you are interested in learning about the configurations, then this project ca
 **You’ll need to have Node installed on your local development machine**. You can then clone this repo
 
 ```sh
-git clone --depth=1 https://github.com/saranshkataria/frontend-starter-kit.git
+git clone --depth=1 https://github.com/saranshkataria/frontend-starter-kit.git <YOUR_PROJECT_NAME>
 ```
 
 You can then start building your own project based on the project that gets cloned. You can also remove the remote to the repo to avoid accidentally pushing to it.
 
-Once you have a copy of the project, you can run one of the following commands:
+Once you have a copy of the project, you need to install the dependencies. Run the command `npm install` or `yarn add` in the command line.
+After that you can run one of the following commands in the command line:
 
 - `npm dev` or `yarn dev` to run a development server
 - `npm prod` or `yarn prod` to create a production build
