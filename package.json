@@ -6,7 +6,7 @@
   "author": "saranshkataria <saransh@wisdomgeek.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --env.mode development --watch",
+    "dev": "webpack-dev-server --env.mode development --hot",
     "prod": "webpack --env.mode production",
     "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod:debug": "npm run debug -- --env.mode production",
@@ -40,6 +40,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.1.0",
     "prettier": "^1.16.4",
+    "react-hot-loader": "^4.6.5",
     "react-test-renderer": "^16.8.1",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.3.3",

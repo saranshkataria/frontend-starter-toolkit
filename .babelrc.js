@@ -16,5 +16,6 @@ module.exports = api => {
         },
       ],
     ],
+    plugins: ['react-hot-loader/babel'],
   };
 };

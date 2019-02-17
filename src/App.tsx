@@ -1,4 +1,6 @@
 import React from 'react';
-const AppComponent = () => <div>Hello World</div>;
-AppComponent.displayName = 'App';
-export default AppComponent;
+import { hot } from 'react-hot-loader/root';
+
+const App = () => <div>Hello World</div>;
+App.displayName = 'App';
+export default hot(App);
