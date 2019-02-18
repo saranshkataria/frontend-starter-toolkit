@@ -26,4 +26,4 @@ After that you can run one of the following commands in the command line:
 - `npm lint` or `yarn lint` for running ESLint to type check your source code
 - `npm test` or `yarn test` for running Jest to run your test cases
 
-It is also recommended that you install Prettier for your IDE since the project supports it out of the box. Currently we have not integrated Prettier as part of the build step, but we will do so in the near future. If you are not sure about what prettier is, you can read more about it [in this blog post about Prettier](https://www.wisdomgeek.com/development/web-development/using-prettier-format-javascript-code/).
+It is also recommended that you install the Prettier extension for your IDE/Editor since the project supports it out of the box. Prettier has also been integrated as a pre commit hook to ensure that all files are formatted correctly. If you are not sure about what prettier is, you can read more about it [in this blog post about Prettier](https://www.wisdomgeek.com/development/web-development/using-prettier-format-javascript-code/).
