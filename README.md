@@ -1,6 +1,6 @@
-# Frontend Starter Kit
+# Frontend Starter Toolkit
 
-This starter kit is a good starting place for you if you are starting out with a React based project using Typescript. You can clone this repository and start using the project without having to worry about configuring tools and configurations.
+This starter toolkit is a good starting place for you if you are starting out with a React based project using Typescript. You can clone this repository and start using the project without having to worry about configuring tools and configurations.
 
 This project uses React, Typescript, Babel (for transpiling TS), Webpack ,ESLint (for code checking), Prettier (for code formatting) and Jest (for testing).
 
@@ -11,7 +11,7 @@ If you are interested in learning about the configurations, then this project ca
 **You’ll need to have Node installed on your local development machine**. You can then clone this repo
 
 ```sh
-git clone --depth=1 https://github.com/saranshkataria/frontend-starter-kit.git <YOUR_PROJECT_NAME>
+git clone --depth=1 https://github.com/saranshkataria/frontend-starter-toolkit.git <YOUR_PROJECT_NAME>
 ```
 
 You can then start building your own project based on the project that gets cloned. You can also remove the remote to the repo to avoid accidentally pushing to it.
