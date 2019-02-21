@@ -20,6 +20,9 @@ module.exports = (env = { mode: 'production' }) => {
             test: /\.(ts|tsx)$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
+            options: {
+              cacheDirectory: true,
+            },
           },
           {
             test: /\.(ts|tsx)$/,
