@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log('TODO: add code to convert to npm project');
+const fs = require('fs-extra');
+const folderName = process.argv.slice(2);
+fs.ensureDirSync('./' + folderName);

@@ -1,6 +1,6 @@
 {
   "name": "frontend-starter-toolkit",
-  "version": "0.0.8",
+  "version": "0.0.19",
   "repository": "https://github.com/saranshkataria/frontend-starter-toolkit.git",
   "author": "saranshkataria <saransh@wisdomgeek.com>",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "babel-loader": "^8.0.5",
+    "fs-extra": "^7.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "webpack": "^4.29.4",
