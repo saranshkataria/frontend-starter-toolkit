@@ -14,9 +14,22 @@ if (folderName) {
 }
 fs.ensureDirSync(folderName);
 
+const frontendStarterToolkitPackacgeVersion = JSON.parse(
+  fs.readFileSync('package.json', 'utf8')
+).version;
+
 const packageJson = {
   name: folderName,
   version: '0.0.1',
+  scripts: {
+    start: 'frontend-starter-toolkit start',
+    build: 'frontend-starter-toolkit build',
+    test: 'frontend-starter-toolkit test',
+    eject: 'frontend-starter-toolkit eject',
+  },
+  dependencies: {
+    'frontend-starter-toolkit': frontendStarterToolkitPackacgeVersion,
+  },
 };
 
 const root = path.resolve(folderName);
