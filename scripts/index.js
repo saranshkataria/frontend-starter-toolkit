@@ -2,6 +2,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const os = require('os');
+const envinfo = require('envinfo');
 
 let folderName = process.argv[2];
 if (folderName) {
@@ -38,3 +39,12 @@ fs.writeFileSync(
   path.join(root, 'package.json'),
   JSON.stringify(packageJson, undefined, 2) + os.EOL
 );
+
+envinfo.run({ Binaries: ['Yarn'] }, { json: true }).then(envInfo => {
+  const isYarnInstalled = Boolean(JSON.parse(envInfo).Binaries);
+  if (isYarnInstalled) {
+    // use yarn to install the project into newly created directory
+  } else {
+    // use npm to install the project into newly created directory
+  }
+});
