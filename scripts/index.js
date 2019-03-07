@@ -48,6 +48,9 @@ try {
 } catch (e) {
   isYarnInstalled = false;
 }
+
+fs.copySync(path.join(process.argv[1], '../..', 'src'), path.join(root, 'src'));
+
 process.chdir(root);
 if (isYarnInstalled) {
   child_process.execSync('yarn', { stdio: 'inherit' });
