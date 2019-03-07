@@ -2,7 +2,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const os = require('os');
-const envinfo = require('envinfo');
+var child_process = require('child_process');
 
 let folderName = process.argv[2];
 if (folderName) {
@@ -31,6 +31,7 @@ const packageJson = {
   dependencies: {
     'frontend-starter-toolkit': frontendStarterToolkitPackacgeVersion,
   },
+  license: 'MIT',
 };
 
 const root = path.resolve(folderName);
@@ -40,11 +41,16 @@ fs.writeFileSync(
   JSON.stringify(packageJson, undefined, 2) + os.EOL
 );
 
-envinfo.run({ Binaries: ['Yarn'] }, { json: true }).then(envInfo => {
-  const isYarnInstalled = Boolean(JSON.parse(envInfo).Binaries);
-  if (isYarnInstalled) {
-    // use yarn to install the project into newly created directory
-  } else {
-    // use npm to install the project into newly created directory
-  }
-});
+let isYarnInstalled = false;
+try {
+  child_process.execSync('yarnpkg --version', { stdio: 'ignore' });
+  isYarnInstalled = true;
+} catch (e) {
+  isYarnInstalled = false;
+}
+process.chdir(root);
+if (isYarnInstalled) {
+  child_process.execSync('yarn', { stdio: 'inherit' });
+} else {
+  child_process.execSync('npm install', { stdio: 'inherit' });
+}
