@@ -10,7 +10,7 @@
     "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod:debug": "npm run debug -- --env.mode production",
     "dev:debug": "npm run debug -- --env.mode development",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint": "eslint . --ext .ts,.tsx",
     "test": "jest",
     "test:coverage": "npm run test -- --coverage",
     "validate": "npm-run-all --parallel lint test",
