@@ -1,3 +1,6 @@
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const path = require('path');
+
 module.exports = () => ({
   devtool: 'eval-source-map',
   devServer: {
@@ -10,4 +13,11 @@ module.exports = () => ({
       errors: true,
     },
   },
+  plugins: [
+    new ForkTsCheckerWebpackPlugin({
+      checkSyntacticErrors: true,
+      tsconfig: './tsconfig.json',
+      async: false,
+    }),
+  ],
 });
