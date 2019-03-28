@@ -28,6 +28,11 @@ module.exports = {
     },
   },
   rules: {
-    allowTypedFunctionExpressions: true,
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {
+        allowTypedFunctionExpressions: true,
+      },
+    ],
   },
 };
