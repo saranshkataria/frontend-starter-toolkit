@@ -27,4 +27,7 @@ module.exports = {
       version: 'detect',
     },
   },
+  rules: {
+    allowTypedFunctionExpressions: true,
+  },
 };
