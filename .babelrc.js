@@ -34,6 +34,11 @@ module.exports = api => {
            * It also takes advantage of the fact that a bundler will load the same polyfill only once.
            */
           useBuiltIns: 'usage',
+          /**
+           * useBuiltins needs to know which version of core-js to use to include polyfills accordingly.
+           * Setting the proposals property to true allows Babel to inject proposal polyfills.
+           */
+          corejs: { version: 3, proposals: true },
         },
       ],
     ],

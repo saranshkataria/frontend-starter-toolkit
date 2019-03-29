@@ -31,8 +31,8 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
-        allowTypedFunctionExpressions: true,
         allowExpressions: true,
+        allowTypedFunctionExpressions: true,
       },
     ],
   },
