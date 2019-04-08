@@ -4,7 +4,13 @@ This starter toolkit is a good starting place for you if you are starting out wi
 
 This project uses React, Typescript, Babel (for transpiling TS), Webpack ,ESLint (for code checking), Prettier (for code formatting) and Jest (for testing).
 
-If you are interested in learning about the configurations, then this project can be useful as well since all the configurations have been outlined as individual commits in the history of the project to make it easier to understand. We have also started writing posts explaining the configuration steps. You can read about [Configuring Typescript with Babel and Webpack](https://www.wisdomgeek.com/development/web-development/how-to-setup-typescript-with-babel-and-webpack/) and [Setting up ESLint for TypeScript](https://www.wisdomgeek.com/general/internet/how-to-setup-eslint-for-typescript-code/) posts. More posts will follow soon.
+If you are interested in learning about the configurations, then this project can be useful as well since all the configurations have been outlined as individual commits in the history of the project to make it easier to understand. We have also started writing posts explaining the configuration steps. You can read about the following posts:
+
+- [Configuring Typescript with Babel and Webpack](https://www.wisdomgeek.com/development/web-development/how-to-setup-typescript-with-babel-and-webpack/)
+- [Setting up ESLint for TypeScript](https://www.wisdomgeek.com/development/web-development/how-to-setup-eslint-for-typescript-code/)
+- [Setting up ESLint for TypeScript](https://www.wisdomgeek.com/development/web-development/how-to-setup-jest-typescript-babel-webpack-project)
+
+More posts will follow soon.
 
 ## Running the project
 

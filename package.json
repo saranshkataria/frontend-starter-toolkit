@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest",
     "test:coverage": "npm run test -- --coverage",
-    "validate": "npm-run-all --parallel lint test",
+    "validate": "npm-run-all --parallel lint test check-types",
     "check-types": "tsc"
   },
   "dependencies": {
