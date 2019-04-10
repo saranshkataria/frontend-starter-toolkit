@@ -5,16 +5,13 @@
   "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
   "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
   "license": "MIT",
-  "main": "frontend-scripts.js",
+  "bin": "frontend-scripts.js",
   "files": [
     "frontend-scripts.js"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saranshkataria/frontend-starter-kit.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/saranshkataria/frontend-starter-kit/issues"
@@ -55,5 +52,6 @@
     "react-test-renderer": "^16.8.6",
     "typescript": "^3.4.2",
     "webpack-dev-server": "^3.2.1"
-  }
+  },
+  "gitHead": "31de127341c9548c5af2a813c484144cb17e05d2"
 }

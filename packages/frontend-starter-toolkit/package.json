@@ -5,7 +5,7 @@
   "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
   "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
   "license": "MIT",
-  "main": "frontend-starter-toolkit.js",
+  "bin": "frontend-starter-toolkit.js",
   "files": [
     "frontend-starter-toolkit.js"
   ],
@@ -13,13 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/saranshkataria/frontend-starter-kit.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/saranshkataria/frontend-starter-kit/issues"
   },
   "dependencies": {
     "fs-extra": "^7.0.1"
-  }
+  },
+  "gitHead": "31de127341c9548c5af2a813c484144cb17e05d2"
 }
