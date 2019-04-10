@@ -3,12 +3,13 @@
 const fs = require('fs-extra');
 const path = require('path');
 const os = require('os');
-var child_process = require('child_process');
+var childProcess = require('child_process');
 
 let folderName = process.argv[2];
 if (folderName) {
   folderName = folderName.toString();
 } else {
+  // eslint-disable-next-line no-console
   console.log(
     'Please specify a directory name to install frontend starter toolkit in'
   );
@@ -44,7 +45,7 @@ fs.writeFileSync(
 
 let isYarnInstalled = false;
 try {
-  child_process.execSync('yarnpkg --version', { stdio: 'ignore' });
+  childProcess.execSync('yarnpkg --version', { stdio: 'ignore' });
   isYarnInstalled = true;
 } catch (e) {
   isYarnInstalled = false;
@@ -52,7 +53,7 @@ try {
 
 process.chdir(root);
 if (isYarnInstalled) {
-  child_process.execSync('yarn', { stdio: 'inherit' });
+  childProcess.execSync('yarn', { stdio: 'inherit' });
 } else {
-  child_process.execSync('npm install', { stdio: 'inherit' });
+  childProcess.execSync('npm install', { stdio: 'inherit' });
 }
