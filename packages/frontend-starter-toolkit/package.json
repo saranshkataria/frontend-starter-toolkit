@@ -1,6 +1,6 @@
 {
   "name": "frontend-starter-toolkit",
-  "version": "0.0.28-alpha.2",
+  "version": "0.0.28-alpha.3",
   "description": "> TODO: description",
   "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
   "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
@@ -15,9 +15,6 @@
   },
   "bugs": {
     "url": "https://github.com/saranshkataria/frontend-starter-kit/issues"
-  },
-  "dependencies": {
-    "fs-extra": "^7.0.1"
   },
   "gitHead": "51cb3f26d6c9b9d22f6c98b766d54ea3482158a0"
 }
