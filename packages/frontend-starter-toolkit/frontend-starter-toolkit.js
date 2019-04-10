@@ -24,13 +24,13 @@ const packageJson = {
   name: folderName,
   version: '0.0.1',
   scripts: {
-    start: 'frontend-scripts start',
-    build: 'frontend-scripts build',
-    test: 'frontend-scripts test',
-    eject: 'frontend-scripts eject',
+    start: 'frontend-starter-scripts start',
+    build: 'frontend-starter-scripts build',
+    test: 'frontend-starter-scripts test',
+    eject: 'frontend-starter-scripts eject',
   },
   dependencies: {
-    'frontend-scripts': frontendStarterToolkitPackacgeVersion,
+    'frontend-starter-scripts': frontendStarterToolkitPackacgeVersion,
   },
   license: 'MIT',
 };

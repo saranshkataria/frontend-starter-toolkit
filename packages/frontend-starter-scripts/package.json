@@ -1,13 +1,13 @@
 {
-  "name": "frontend-scripts",
+  "name": "frontend-starter-scripts",
   "version": "0.0.28-alpha.1",
   "description": "> TODO: description",
   "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
   "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
   "license": "MIT",
-  "bin": "frontend-scripts.js",
+  "bin": "frontend-starter-scripts.js",
   "files": [
-    "frontend-scripts.js"
+    "frontend-starter-scripts.js"
   ],
   "repository": {
     "type": "git",
@@ -53,5 +53,5 @@
     "typescript": "^3.4.2",
     "webpack-dev-server": "^3.2.1"
   },
-  "gitHead": "31de127341c9548c5af2a813c484144cb17e05d2"
+  "gitHead": "51cb3f26d6c9b9d22f6c98b766d54ea3482158a0"
 }
