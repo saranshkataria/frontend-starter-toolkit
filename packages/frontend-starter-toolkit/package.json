@@ -1,0 +1,25 @@
+{
+  "name": "frontend-starter-toolkit",
+  "version": "0.0.27",
+  "description": "> TODO: description",
+  "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
+  "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
+  "license": "MIT",
+  "main": "frontend-starter-toolkit.js",
+  "files": [
+    "frontend-starter-toolkit.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saranshkataria/frontend-starter-kit.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/saranshkataria/frontend-starter-kit/issues"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}
