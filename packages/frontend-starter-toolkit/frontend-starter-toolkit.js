@@ -18,8 +18,10 @@ if (folderName) {
 fs.ensureDirSync(folderName);
 
 const frontendStarterToolkitPackacgeVersion = JSON.parse(
-  fs.readFileSync('./package.json', 'utf8')
-).version;
+  fs.readFileSync('package.json', 'utf8')
+);
+
+console.log(frontendStarterToolkitPackacgeVersion);
 
 const packageJson = {
   name: folderName,
