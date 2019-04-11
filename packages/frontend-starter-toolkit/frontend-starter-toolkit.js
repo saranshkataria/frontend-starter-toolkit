@@ -17,8 +17,8 @@ if (folderName) {
 }
 fs.ensureDirSync(folderName);
 
-const frontendStarterToolkitPackacgeVersion = JSON.parse(
-  fs.readFileSync('./packages/frontend-starter-toolkit/package.json', 'utf8')
+const frontendStarterToolkitPackageVersion = JSON.parse(
+  fs.readFileSync('./packages/frontend-starter-scripts/package.json', 'utf8')
 ).version;
 
 const packageJson = {
@@ -31,7 +31,7 @@ const packageJson = {
     eject: 'frontend-starter-scripts eject',
   },
   dependencies: {
-    'frontend-starter-scripts': frontendStarterToolkitPackacgeVersion,
+    'frontend-starter-scripts': frontendStarterToolkitPackageVersion,
   },
   license: 'MIT',
 };
@@ -52,10 +52,11 @@ try {
 }
 
 process.chdir(root);
+
 if (isYarnInstalled) {
   childProcess.execSync('yarn', { stdio: 'inherit' });
 } else {
   childProcess.execSync('npm install', { stdio: 'inherit' });
 }
 
-require('frontend-starter-scripts/scripts/init.js');
+require('frontend-starter-scripts').init();

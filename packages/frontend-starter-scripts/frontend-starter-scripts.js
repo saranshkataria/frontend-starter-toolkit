@@ -1,5 +1,8 @@
 'use strict';
 
+const init = require('./scripts/init');
+
+module.exports = { init };
 // Copy src files into destination
 // fs.copySync(path.join(process.argv[1], '../..', 'src'), path.join(root, 'src'));
 /*
@@ -21,4 +24,3 @@ if (script) {
 }
 
 */
-
