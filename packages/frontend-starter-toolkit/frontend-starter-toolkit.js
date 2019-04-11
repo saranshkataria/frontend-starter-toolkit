@@ -57,3 +57,5 @@ if (isYarnInstalled) {
 } else {
   childProcess.execSync('npm install', { stdio: 'inherit' });
 }
+
+require('frontend-starter-scripts/scripts/init.js');

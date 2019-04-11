@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/saranshkataria/frontend-starter-kit/issues"
   },
-  "gitHead": "51cb3f26d6c9b9d22f6c98b766d54ea3482158a0"
+  "gitHead": "51cb3f26d6c9b9d22f6c98b766d54ea3482158a0",
+  "dependencies": {
+    "frontend-starter-scripts": "^0.0.28-alpha.3"
+  }
 }
