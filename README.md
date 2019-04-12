@@ -8,7 +8,7 @@ If you are interested in learning about the configurations, then this project ca
 
 - [Configuring Typescript with Babel and Webpack](https://www.wisdomgeek.com/development/web-development/how-to-setup-typescript-with-babel-and-webpack/)
 - [Setting up ESLint for TypeScript](https://www.wisdomgeek.com/development/web-development/how-to-setup-eslint-for-typescript-code/)
-- [Setting up ESLint for TypeScript](https://www.wisdomgeek.com/development/web-development/how-to-setup-jest-typescript-babel-webpack-project)
+- [How to setup Jest in a TypeScript, Babel and Webpack project](https://www.wisdomgeek.com/development/web-development/how-to-setup-jest-typescript-babel-webpack-project)
 
 More posts will follow soon.
 
