@@ -8,7 +8,7 @@
   "main": "frontend-starter-scripts.js",
   "files": [
     "frontend-starter-scripts.js",
-    "scripts/init.js"
+    "scripts"
   ],
   "repository": {
     "type": "git",
