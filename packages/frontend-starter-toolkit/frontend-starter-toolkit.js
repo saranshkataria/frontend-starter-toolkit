@@ -59,4 +59,4 @@ if (isYarnInstalled) {
   childProcess.execSync('npm install', { stdio: 'inherit' });
 }
 
-require('frontend-starter-scripts').init();
+require('frontend-starter-scripts').init(root, process.argv[1]);

@@ -3,9 +3,10 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const init = function() {
+const init = function(root, cwd) {
+  console.log(cwd);
   fs.copySync(
-    path.join(process.argv[1], '../..', 'src'),
+    path.join(cwd, '../../frontend-starter-scripts', 'src'),
     path.join(root, 'src')
   );
 };
