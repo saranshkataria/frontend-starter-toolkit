@@ -7,7 +7,8 @@
   "license": "MIT",
   "main": "frontend-starter-scripts.js",
   "files": [
-    "frontend-starter-scripts.js"
+    "frontend-starter-scripts.js",
+    "scripts/init.js"
   ],
   "repository": {
     "type": "git",
