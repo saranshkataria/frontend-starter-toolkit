@@ -5,7 +5,7 @@
   "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
   "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
   "license": "MIT",
-  "bin": "frontend-starter-scripts.js",
+  "main": "frontend-starter-scripts.js",
   "files": [
     "frontend-starter-scripts.js"
   ],
