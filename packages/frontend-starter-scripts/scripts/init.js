@@ -5,11 +5,8 @@ const path = require('path');
 
 const init = function(root, cwd) {
   console.log(cwd);
-  console.log(__dirname + '');
+  console.log(path.resolve(__dirname, '..', 'src'));
   // console.log(__dirname);
-  // fs.copySync(
-  //   path.join(cwd, '../../frontend-starter-scripts', 'src'),
-  //   path.join(root, 'src')
-  // );
+  fs.copySync(path.resolve(__dirname, '..', 'src'), path.join(root, 'src'));
 };
 module.exports = init;
