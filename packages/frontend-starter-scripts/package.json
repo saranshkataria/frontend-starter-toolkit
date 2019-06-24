@@ -9,7 +9,7 @@
   "files": [
     "frontend-starter-scripts.js",
     "scripts",
-    "src"
+    "src/*"
   ],
   "repository": {
     "type": "git",
