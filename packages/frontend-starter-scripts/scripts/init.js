@@ -5,10 +5,10 @@ const path = require('path');
 
 const init = function(root, cwd) {
   console.log(cwd);
-  console.log(process.cwd());
-  fs.copySync(
-    path.join(cwd, '../../frontend-starter-scripts', 'src'),
-    path.join(root, 'src')
-  );
+  console.log(path.resolve(process.cwd(), 'src'));
+  // fs.copySync(
+  //   path.join(cwd, '../../frontend-starter-scripts', 'src'),
+  //   path.join(root, 'src')
+  // );
 };
 module.exports = init;
