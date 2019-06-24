@@ -9,11 +9,8 @@
   "files": [
     "frontend-starter-scripts.js",
     "scripts",
-    "src/*"
+    "src"
   ],
-  "directories": {
-    "src": "src"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saranshkataria/frontend-starter-kit.git"
