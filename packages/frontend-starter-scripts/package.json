@@ -11,6 +11,9 @@
     "scripts",
     "src/*"
   ],
+  "directories": {
+    "src": "src"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saranshkataria/frontend-starter-kit.git"
