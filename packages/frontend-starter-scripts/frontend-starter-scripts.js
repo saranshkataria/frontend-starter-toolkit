@@ -1,3 +1,11 @@
+'use strict';
+
+const init = require('./scripts/init');
+
+module.exports = { init };
+
+/*
+
 #!/usr/bin/env node
 const spawn = require('cross-spawn');
 
@@ -13,3 +21,5 @@ if (script) {
     process.exit(result.status);
   }
 }
+
+*/

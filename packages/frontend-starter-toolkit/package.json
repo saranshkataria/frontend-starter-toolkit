@@ -5,13 +5,8 @@
   "author": "saransh kataria <saransh@wisdomgeek.com> (https://www.wisdomgeek.com/)",
   "homepage": "https://github.com/saranshkataria/frontend-starter-kit#readme",
   "license": "MIT",
-  "main": "lib/frontend-starter-toolkit.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
-    "lib"
+    "frontend-starter-toolkit.js"
   ],
   "repository": {
     "type": "git",
@@ -22,5 +17,8 @@
   },
   "bugs": {
     "url": "https://github.com/saranshkataria/frontend-starter-kit/issues"
+  },
+  "dependencies": {
+    "frontend-starter-scripts": "^0.0.33"
   }
 }
