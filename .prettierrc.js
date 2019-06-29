@@ -3,6 +3,8 @@ module.exports = {
   trailingComma: 'es5',
   // Use single quotes instead of double quotes, prettier defaults to double quotes
   singleQuote: true,
-  // Print semicolons at the ends of statements.
+  // Print semicolons at the ends of statements
   semi: true,
+  // Specifying the number of spaces per indentation-level
+  tabWidth: 2,
 };
